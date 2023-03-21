@@ -3,7 +3,7 @@ export interface FormInput {
     type: string,
     autoComplete: string,
     placeholder?: string,
-    NameLabel: string
+    nameLabel: string,
 }
 
 export interface SignUpFormData {
@@ -11,4 +11,6 @@ export interface SignUpFormData {
     email: string;
     password: string;
     confirmPassword: string;
+}
+export interface LoginFormData extends SignUpFormData {
 }
