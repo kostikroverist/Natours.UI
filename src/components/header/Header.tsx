@@ -6,7 +6,7 @@ const Header = () => {
         <>
             <header className="p-6 bg-header-color text-gray-100 flex justify-between ">
                 <Link className="p-3" to='/'>ALL TOURS</Link>
-                <div className="p-3">LOGO</div>
+                <div className="p-3 ml-10">LOGO</div>
                 <nav>
                     <ul className="flex" >
                         <li className="p-3"><Link to="login">LOG IN</Link></li>

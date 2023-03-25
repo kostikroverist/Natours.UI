@@ -13,6 +13,8 @@ module.exports = {
         'text-label-color': '#777777',
         'text-header-login': '#55c57a',
         'background-button-form': '#55c57a',
+        'text-description': '#a6a6a6',
+        'item-footer-color': '#f7f7f7'
       }
     },
   },

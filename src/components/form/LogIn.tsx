@@ -11,26 +11,22 @@ const LogIn = () => {
     alert(`Your name ${data.name}`)
   }
   return (
-    <div className="flex justify-center mt-16">
-      <div className=" w-1/3 space-y-8  bg-white  p-14">
-        <h1 className="text-text-header-login text-3xl text-">LOG INTO YOUR ACCOUNT</h1>
-        <form onSubmit={handleSubmit(onSubmit)}>
+    <div className="m-auto mt-20 w-1/3 space-y-8  bg-white  p-14">
+      <h1 className="text-text-header-login text-3xl text-">LOG INTO YOUR ACCOUNT</h1>
+      <form onSubmit={handleSubmit(onSubmit)}>
 
-          <FormInputComponets rest={register("email")} id={'email'} type="email"
-            autoComplete="email" nameLabel={"Email address"} placeholder="you@example.com" />
-
-
-          <FormInputComponets rest={register("password")} id={'Password'} type="Password"
-            autoComplete="password" nameLabel={"Password"} placeholder='********' />
+        <FormInputComponets rest={register("email")} id={'email'} type="email"
+          autoComplete="email" nameLabel={"Email address"} placeholder="you@example.com" />
 
 
-          <BaseButton name="Login" />
-        </form>
+        <FormInputComponets rest={register("password")} id={'Password'} type="Password"
+          autoComplete="password" nameLabel={"Password"} placeholder='********' />
 
-      </div>
 
-    </div >
+        <BaseButton name="Login" />
+      </form>
 
+    </div>
   )
 }
 

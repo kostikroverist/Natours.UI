@@ -14,32 +14,32 @@ const SignUp: FC = () => {
     }
 
     return (
-        <div className="flex justify-center mt-16">
-            <div className=" w-1/3 space-y-8  bg-white  p-14">
-                <h1 className="text-text-header-login text-3xl text-">CREATE YOUR ACCOUNT!</h1>
-                <form onSubmit={handleSubmit(onSubmit)}>
-                    <FormInputComponets rest={register("name", {
-                        required: true,
-                    })} id={'name'} type="text"
-                        autoComplete="name" nameLabel={"Your name"} />
+        <div className="mx-auto  mt-16 w-1/3 space-y-8  bg-white  p-14">
+            <h1 className="text-text-header-login text-3xl text-">CREATE YOUR ACCOUNT!</h1>
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <FormInputComponets rest={register("name", {
+                    required: true,
+                })} id={'name'} type="text"
+                    autoComplete="name" nameLabel={"Your name"} />
 
 
-                    <FormInputComponets rest={register("email")} id={'email'} type="email"
-                        autoComplete="email" nameLabel={"Email address"} placeholder="you@example.com" />
+                <FormInputComponets rest={register("email")} id={'email'} type="email"
+                    autoComplete="email" nameLabel={"Email address"} placeholder="you@example.com" />
 
 
-                    <FormInputComponets rest={register("password")} id={'Password'} type="Password"
-                        autoComplete="password" nameLabel={"Password"} placeholder='********' />
+                <FormInputComponets rest={register("password")} id={'Password'} type="Password"
+                    autoComplete="password" nameLabel={"Password"} placeholder='********' />
 
-                    <FormInputComponets rest={register("confirmPassword")} id={'confirmPassword'} type="password"
-                        autoComplete="confirmPassword" nameLabel={"Confirm Password"} placeholder='********' />
+                <FormInputComponets rest={register("confirmPassword")} id={'confirmPassword'} type="password"
+                    autoComplete="confirmPassword" nameLabel={"Confirm Password"} placeholder='********' />
+
+                <div className="mt-5" >
                     <BaseButton name="SIGN UP" />
-                </form>
+                </div>
 
-            </div>
+            </form>
 
-        </div >
-
+        </div>
     );
 }
 export default SignUp;
