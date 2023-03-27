@@ -23,7 +23,7 @@ const TourItem: React.FC<TourItemProps> = ({ tourData }) => {
       <div className="relative  h-56">
         <div className="clip-path-polygon ">
           <div className="absolute w-full h-full bg-gradient-to-br from-green-400 to-green-500 opacity-50"></div>
-          <img src={"https://www.natours.dev/img/tours/tour-2-cover.jpg"} className="object-cover h-full w-full " alt="Зображення" />
+          <img src={`http://localhost:4200/api/v1/img/tours/${imageCover}`} className="object-cover h-full w-full " alt="Зображення" />
         </div>
         <div className="">
           <h1 className="text-3xl text-right absolute bottom-4 right-8 w-8/12 z-10 text-white ">
