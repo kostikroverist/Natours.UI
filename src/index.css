@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+}
+.tour-item {
+  width: 329px;
+}
+
+.background-gradient {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(77, 209, 57, 0.85),
+    rgba(67, 166, 135, 0.85)
+  );
+}
+
+.clip-path-polygon {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 98%);
+  clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 98%);
+}
+.clip-path-polygon-details {
+  top: 91%;
+  clip-path: polygon(0 50%, 100% 13%, 100% 100%, 0 100%);
+}
+.clip-path-polygon-forImg {
+  clip-path: polygon(0 29%, 100% 4%, 100% 74%, 0 100%);
+}
+.clip-path-polygon-maps {
+  clip-path: polygon(0 29%, 100% 6%, 100% 81%, 0 100%);
+}
+
+.clip-path-polygon-reviews {
+  clip-path: polygon(0 24%, 100% 8%, 100% 70%, 0 89%);
+}
+.as {
+  width: 820px;
+  height: 540px;
+}
+.leaflet-container {
+  height: 600px;
+  width: 100%;
+}
+
+.img-card-map {
+  height: 800px;
+}
+
+.reviews {
+  height: 800px;
+}
