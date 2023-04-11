@@ -23,6 +23,8 @@ export interface IGuide {
     role: string;
 }
 
+
+
 export interface ILocation {
     type: string;
     coordinates: number[];
@@ -58,3 +60,17 @@ export interface ITour {
     durationWeeks: number;
     id: string;
 }
+
+export interface Review {
+    _id: string;
+    review: string;
+    rating: number;
+    tour: string;
+    user: {
+      _id: string;
+      name: string;
+      photo: string;
+    };
+    createdAt: string;
+    id: string;
+  }

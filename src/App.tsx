@@ -9,6 +9,7 @@ import LogIn from './components/form/LogIn';
 import TourList from './components/Tours/ToursList';
 import { ITour } from './types/Types';
 import Tours from './components/Tours/Tours';
+import TourDetails from './components/Tours/TourDetails';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,18 +32,19 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/signup" element={
+          <Route path="signup" element={
             <SignUp />
           }>
           </Route>
-          <Route path="/login" element={
+          <Route path="login" element={
             <LogIn />
           }>
           </Route>
-          <Route path='/' element={
-            <Tours toursData={tours} />
+          <Route path='tours' element={
+           <Tours toursData={tours} />
           }>
           </Route>
+          <Route path='tours/:_id' element={<TourDetails />} />
         </Routes>
       </BrowserRouter>,
 
