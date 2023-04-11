@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 
 type ButtonProps = {
-    name: string
+    name: string,
 }
 const BaseButton: FC<ButtonProps> = ({ name }) => {
     return (
